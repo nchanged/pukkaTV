@@ -1,0 +1,452 @@
+[32m[2015-02-11 21:20:26.005] [INFO] domain - [39mUsing TinyDB adapter
+[32m[2015-02-11 21:20:26.008] [INFO] domain - [39mDB Path: /Users/iorlov/.cache/pukka
+undefined
+Getting to page 15
+[32m[2015-02-11 21:20:26.526] [INFO] [default] - [39mTV Show added Person of Interest
+[32m[2015-02-11 21:20:26.963] [INFO] [default] - [39mTV Show added Its Always Sunny in Philadelphia
+[32m[2015-02-11 21:20:27.170] [INFO] [default] - [39mTV Show added Revenge
+[32m[2015-02-11 21:20:27.437] [INFO] [default] - [39mTV Show added Banshee
+[32m[2015-02-11 21:20:27.972] [INFO] [default] - [39mTV Show added Awkward
+[32m[2015-02-11 21:20:28.818] [INFO] [default] - [39mTV Show added Sleepy Hollow
+[32m[2015-02-11 21:20:29.128] [INFO] [default] - [39mTV Show added Greys Anatomy
+[32m[2015-02-11 21:20:29.813] [INFO] [default] - [39mTV Show added Hell on Wheels
+[32m[2015-02-11 21:20:30.725] [INFO] [default] - [39mTV Show added Homeland
+[32m[2015-02-11 21:20:31.171] [INFO] [default] - [39mTV Show added Modern Family
+[32m[2015-02-11 21:20:31.617] [INFO] [default] - [39mTV Show added The League
+[32m[2015-02-11 21:20:32.087] [INFO] [default] - [39mTV Show added Shameless US
+[32m[2015-02-11 21:20:32.089] [INFO] [default] - [39m We have already Awkward
+[32m[2015-02-11 21:20:32.089] [INFO] [default] - [39mFound fresher index for Awkward 421
+[32m[2015-02-11 21:20:32.371] [INFO] [default] - [39mTV Show added The Walking Dead
+[32m[2015-02-11 21:20:32.625] [INFO] [default] - [39mTV Show added The Mindy Project
+[32m[2015-02-11 21:20:33.179] [INFO] [default] - [39mTV Show added Marvels Agent Carter
+[32m[2015-02-11 21:20:33.638] [INFO] [default] - [39mTV Show added Californication
+[32m[2015-02-11 21:20:33.832] [INFO] [default] - [39mTV Show added Archer 2009
+[32m[2015-02-11 21:20:34.021] [INFO] [default] - [39mTV Show added Arrow
+[32m[2015-02-11 21:20:34.022] [INFO] [default] - [39m We have already Shameless US
+[32m[2015-02-11 21:20:34.022] [INFO] [default] - [39mFound fresher index for Shameless US 503
+[32m[2015-02-11 21:20:34.215] [INFO] [default] - [39mTV Show added Hawaii Five-0 2010
+[32m[2015-02-11 21:20:34.216] [INFO] [default] - [39m We have already Marvels Agent Carter
+Getting to page 14
+[32m[2015-02-11 21:20:34.647] [INFO] [default] - [39mTV Show added The Originals
+[32m[2015-02-11 21:20:35.088] [INFO] [default] - [39mTV Show added Pretty Little Liars
+[32m[2015-02-11 21:20:35.273] [INFO] [default] - [39mTV Show added State of Affairs
+[32m[2015-02-11 21:20:35.456] [INFO] [default] - [39mTV Show added NCIS
+[32m[2015-02-11 21:20:35.457] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:20:35.648] [INFO] [default] - [39mTV Show added Black Sails
+[32m[2015-02-11 21:20:36.069] [INFO] [default] - [39mTV Show added Family Guy
+[32m[2015-02-11 21:20:36.497] [INFO] [default] - [39mTV Show added Nashville 2012
+[32m[2015-02-11 21:20:36.966] [INFO] [default] - [39mTV Show added Workaholics
+[32m[2015-02-11 21:20:37.169] [INFO] [default] - [39mTV Show added Backstrom
+[32m[2015-02-11 21:20:37.727] [INFO] [default] - [39mTV Show added Constantine
+[32m[2015-02-11 21:20:38.231] [INFO] [default] - [39mTV Show added White Collar
+[32m[2015-02-11 21:20:38.414] [INFO] [default] - [39mTV Show added The Flash 2014
+[32m[2015-02-11 21:20:39.014] [INFO] [default] - [39mTV Show added Elementary
+[32m[2015-02-11 21:20:39.219] [INFO] [default] - [39mTV Show added Game of Thrones
+[32m[2015-02-11 21:20:39.411] [INFO] [default] - [39mTV Show added The Big Bang Theory
+[32m[2015-02-11 21:20:39.411] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:20:39.411] [INFO] [default] - [39mFound fresher index for The Big Bang Theory 804
+[32m[2015-02-11 21:20:39.877] [INFO] [default] - [39mTV Show added The Mentalist
+[32m[2015-02-11 21:20:40.587] [INFO] [default] - [39mTV Show added Broadchurch
+[32m[2015-02-11 21:20:40.587] [INFO] [default] - [39m We have already Hawaii Five-0 2010
+[32m[2015-02-11 21:20:40.587] [INFO] [default] - [39m We have already Game of Thrones
+[32m[2015-02-11 21:20:40.588] [INFO] [default] - [39m We have already Constantine
+[32m[2015-02-11 21:20:40.588] [INFO] [default] - [39mFound fresher index for Constantine 110
+[32m[2015-02-11 21:20:40.588] [INFO] [default] - [39m We have already Banshee
+Getting to page 13
+[32m[2015-02-11 21:20:41.135] [INFO] [default] - [39mTV Show added Eye Candy
+[32m[2015-02-11 21:20:41.136] [INFO] [default] - [39m We have already Homeland
+[32m[2015-02-11 21:20:41.136] [INFO] [default] - [39mFound fresher index for Homeland 411
+[32m[2015-02-11 21:20:41.326] [INFO] [default] - [39mTV Show added New Girl
+[32m[2015-02-11 21:20:41.805] [INFO] [default] - [39mTV Show added The New Normal
+[32m[2015-02-11 21:20:42.000] [INFO] [default] - [39mTV Show added Two and a Half Men
+[32m[2015-02-11 21:20:42.200] [INFO] [default] - [39mTV Show added Nashville
+[32m[2015-02-11 21:20:42.202] [INFO] [default] - [39m We have already Its Always Sunny in Philadelphia
+[32m[2015-02-11 21:20:42.203] [INFO] [default] - [39mFound fresher index for Its Always Sunny in Philadelphia 1003
+[32m[2015-02-11 21:20:42.204] [INFO] [default] - [39m We have already Modern Family
+[32m[2015-02-11 21:20:42.420] [INFO] [default] - [39mTV Show added Gotham
+[32m[2015-02-11 21:20:42.892] [INFO] [default] - [39mTV Show added The Librarians US
+[32m[2015-02-11 21:20:43.393] [INFO] [default] - [39mTV Show added Scorpion
+[32m[2015-02-11 21:20:43.645] [INFO] [default] - [39mTV Show added How to Get Away with Murder
+[32m[2015-02-11 21:20:43.645] [INFO] [default] - [39m We have already The Mentalist
+[32m[2015-02-11 21:20:43.645] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:20:43.645] [INFO] [default] - [39mFound fresher index for Marvels Agent Carter 105
+[32m[2015-02-11 21:20:43.646] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:20:43.646] [INFO] [default] - [39mFound fresher index for Pretty Little Liars 421
+[32m[2015-02-11 21:20:43.646] [INFO] [default] - [39m We have already The Mentalist
+[32m[2015-02-11 21:20:43.646] [INFO] [default] - [39mFound fresher index for The Mentalist 708
+[32m[2015-02-11 21:20:43.839] [INFO] [default] - [39mTV Show added Supernatural
+[32m[2015-02-11 21:20:44.055] [INFO] [default] - [39mTV Show added Allegiance
+[32m[2015-02-11 21:20:44.733] [INFO] [default] - [39mTV Show added The Millers
+[32m[2015-02-11 21:20:44.734] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:45.250] [INFO] [default] - [39mTV Show added Sons of Anarchy
+[32m[2015-02-11 21:20:45.740] [INFO] [default] - [39mTV Show added The Vampire Diaries
+[32m[2015-02-11 21:20:45.929] [INFO] [default] - [39mTV Show added Scandal US
+Getting to page 12
+The Walking Dead was not found
+[32m[2015-02-11 21:20:46.373] [INFO] [default] - [39mTV Show added The Walking Dead
+[32m[2015-02-11 21:20:46.374] [INFO] [default] - [39m We have already Elementary
+[32m[2015-02-11 21:20:46.374] [INFO] [default] - [39m We have already Homeland
+[32m[2015-02-11 21:20:46.374] [INFO] [default] - [39m We have already State of Affairs
+[32m[2015-02-11 21:20:46.374] [INFO] [default] - [39mFound fresher index for State of Affairs 111
+[32m[2015-02-11 21:20:46.375] [INFO] [default] - [39m We have already Game of Thrones
+[32m[2015-02-11 21:20:46.375] [INFO] [default] - [39mFound fresher index for Game of Thrones 500
+[32m[2015-02-11 21:20:46.375] [INFO] [default] - [39m We have already Black Sails
+[32m[2015-02-11 21:20:46.375] [INFO] [default] - [39m We have already Revenge
+[32m[2015-02-11 21:20:46.375] [INFO] [default] - [39mFound fresher index for Revenge 413
+[32m[2015-02-11 21:20:46.852] [INFO] [default] - [39mTV Show added Empire 2015
+[32m[2015-02-11 21:20:46.852] [INFO] [default] - [39m We have already Supernatural
+[32m[2015-02-11 21:20:46.852] [INFO] [default] - [39mFound fresher index for Supernatural 1011
+[32m[2015-02-11 21:20:47.324] [INFO] [default] - [39mTV Show added Parks and Recreation
+[32m[2015-02-11 21:20:47.325] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:20:47.325] [INFO] [default] - [39mFound fresher index for Arrow 311
+[32m[2015-02-11 21:20:47.513] [INFO] [default] - [39mTV Show added The Simpsons
+[32m[2015-02-11 21:20:47.513] [INFO] [default] - [39m We have already Parks and Recreation
+[32m[2015-02-11 21:20:47.513] [INFO] [default] - [39mFound fresher index for Parks and Recreation 708
+[32m[2015-02-11 21:20:47.987] [INFO] [default] - [39mTV Show added House of Lies
+[32m[2015-02-11 21:20:48.176] [INFO] [default] - [39mTV Show added Girls
+[32m[2015-02-11 21:20:48.177] [INFO] [default] - [39m We have already Girls
+[32m[2015-02-11 21:20:48.177] [INFO] [default] - [39m We have already Homeland
+[32m[2015-02-11 21:20:48.177] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:20:48.177] [INFO] [default] - [39m We have already Workaholics
+[32m[2015-02-11 21:20:48.177] [INFO] [default] - [39mFound fresher index for Workaholics 502
+[32m[2015-02-11 21:20:48.178] [INFO] [default] - [39m We have already Workaholics
+[32m[2015-02-11 21:20:48.178] [INFO] [default] - [39m We have already The Mentalist
+Getting to page 11
+[32m[2015-02-11 21:20:48.423] [INFO] [default] - [39m We have already Elementary
+[32m[2015-02-11 21:20:48.423] [INFO] [default] - [39m We have already The Vampire Diaries
+[32m[2015-02-11 21:20:48.423] [INFO] [default] - [39m We have already Girls
+[32m[2015-02-11 21:20:48.555] [INFO] [default] - [39mTV Show added NCIS New Orleans
+[32m[2015-02-11 21:20:48.556] [INFO] [default] - [39m We have already Shameless US
+[32m[2015-02-11 21:20:48.556] [INFO] [default] - [39m We have already Homeland
+[32m[2015-02-11 21:20:49.305] [INFO] [default] - [39mTV Show added The Lottery
+[32m[2015-02-11 21:20:49.501] [INFO] [default] - [39mTV Show added 12 Monkeys
+[32m[2015-02-11 21:20:49.502] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:49.502] [INFO] [default] - [39mFound fresher index for Gotham 113
+[32m[2015-02-11 21:20:49.502] [INFO] [default] - [39m We have already New Girl
+[32m[2015-02-11 21:20:49.503] [INFO] [default] - [39m We have already Parks and Recreation
+[32m[2015-02-11 21:20:49.712] [INFO] [default] - [39mTV Show added Criminal Minds
+[32m[2015-02-11 21:20:49.713] [INFO] [default] - [39m We have already Constantine
+[32m[2015-02-11 21:20:49.713] [INFO] [default] - [39mFound fresher index for Constantine 112
+[32m[2015-02-11 21:20:49.713] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:20:49.713] [INFO] [default] - [39mFound fresher index for Pretty Little Liars 515
+[32m[2015-02-11 21:20:49.714] [INFO] [default] - [39m We have already The Mentalist
+[32m[2015-02-11 21:20:49.714] [INFO] [default] - [39mFound fresher index for The Mentalist 709
+[32m[2015-02-11 21:20:49.715] [INFO] [default] - [39m We have already The Flash 2014
+[32m[2015-02-11 21:20:49.715] [INFO] [default] - [39m We have already Person of Interest
+[32m[2015-02-11 21:20:49.715] [INFO] [default] - [39mFound fresher index for Person of Interest 412
+[32m[2015-02-11 21:20:49.715] [INFO] [default] - [39m We have already The Flash 2014
+[32m[2015-02-11 21:20:49.715] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:49.906] [INFO] [default] - [39mTV Show added Switched at Birth
+[32m[2015-02-11 21:20:49.908] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:50.353] [INFO] [default] - [39mTV Show added The Middle
+Getting to page 10
+[32m[2015-02-11 21:20:50.628] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:20:50.628] [INFO] [default] - [39mFound fresher index for Marvels Agent Carter 106
+[32m[2015-02-11 21:20:50.819] [INFO] [default] - [39mTV Show added Forever US
+[32m[2015-02-11 21:20:51.022] [INFO] [default] - [39mTV Show added American Horror Story
+[32m[2015-02-11 21:20:51.230] [INFO] [default] - [39mTV Show added Grimm
+[32m[2015-02-11 21:20:51.231] [INFO] [default] - [39m We have already The Simpsons
+[32m[2015-02-11 21:20:51.231] [INFO] [default] - [39mFound fresher index for The Simpsons 2612
+[32m[2015-02-11 21:20:51.232] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:20:51.232] [INFO] [default] - [39mFound fresher index for The Big Bang Theory 807
+[32m[2015-02-11 21:20:51.435] [INFO] [default] - [39mTV Show added 2 Broke Girls
+[32m[2015-02-11 21:20:51.959] [INFO] [default] - [39mTV Show added Survivor
+[32m[2015-02-11 21:20:51.960] [INFO] [default] - [39m We have already NCIS
+[32m[2015-02-11 21:20:51.960] [INFO] [default] - [39m We have already Homeland
+[32m[2015-02-11 21:20:52.179] [INFO] [default] - [39mTV Show added The Americans 2013
+[32m[2015-02-11 21:20:52.180] [INFO] [default] - [39m We have already The League
+[32m[2015-02-11 21:20:52.181] [INFO] [default] - [39m We have already Workaholics
+[32m[2015-02-11 21:20:52.181] [INFO] [default] - [39mFound fresher index for Workaholics 504
+[32m[2015-02-11 21:20:52.641] [INFO] [default] - [39mTV Show added Betrayal
+[32m[2015-02-11 21:20:52.642] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:20:52.642] [INFO] [default] - [39m We have already Sleepy Hollow
+[32m[2015-02-11 21:20:52.642] [INFO] [default] - [39mFound fresher index for Sleepy Hollow 214
+[32m[2015-02-11 21:20:52.775] [INFO] [default] - [39mTV Show added Mom
+[32m[2015-02-11 21:20:52.776] [INFO] [default] - [39m We have already Modern Family
+[32m[2015-02-11 21:20:52.776] [INFO] [default] - [39m We have already The Middle
+[32m[2015-02-11 21:20:52.776] [INFO] [default] - [39mFound fresher index for The Middle 607
+[32m[2015-02-11 21:20:52.776] [INFO] [default] - [39m We have already New Girl
+[32m[2015-02-11 21:20:52.777] [INFO] [default] - [39m We have already Parks and Recreation
+[32m[2015-02-11 21:20:52.777] [INFO] [default] - [39mFound fresher index for Parks and Recreation 709
+[32m[2015-02-11 21:20:54.261] [INFO] [default] - [39mTV Show added Baby Daddy
+Getting to page 9
+[32m[2015-02-11 21:20:54.515] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:20:54.515] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:54.516] [INFO] [default] - [39m We have already Archer 2009
+[32m[2015-02-11 21:20:54.516] [INFO] [default] - [39mFound fresher index for Archer 2009 605
+[32m[2015-02-11 21:20:54.516] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:20:54.516] [INFO] [default] - [39m We have already Family Guy
+[32m[2015-02-11 21:20:54.516] [INFO] [default] - [39m We have already Constantine
+[32m[2015-02-11 21:20:54.516] [INFO] [default] - [39m We have already Archer 2009
+[32m[2015-02-11 21:20:55.037] [INFO] [default] - [39mTV Show added Quirke
+[32m[2015-02-11 21:20:55.037] [INFO] [default] - [39m We have already Greys Anatomy
+[32m[2015-02-11 21:20:55.037] [INFO] [default] - [39m We have already 2 Broke Girls
+[32m[2015-02-11 21:20:55.038] [INFO] [default] - [39m We have already Revenge
+[32m[2015-02-11 21:20:55.038] [INFO] [default] - [39mFound fresher index for Revenge 414
+[32m[2015-02-11 21:20:55.038] [INFO] [default] - [39m We have already Revenge
+[32m[2015-02-11 21:20:55.038] [INFO] [default] - [39m We have already The Middle
+[32m[2015-02-11 21:20:55.038] [INFO] [default] - [39mFound fresher index for The Middle 612
+[32m[2015-02-11 21:20:55.038] [INFO] [default] - [39m We have already Survivor
+[32m[2015-02-11 21:20:55.039] [INFO] [default] - [39m We have already The Simpsons
+[32m[2015-02-11 21:20:55.039] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:55.039] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:55.039] [INFO] [default] - [39mFound fresher index for Gotham 114
+[32m[2015-02-11 21:20:55.780] [INFO] [default] - [39mTV Show added Burn Notice
+[32m[2015-02-11 21:20:55.783] [INFO] [default] - [39m We have already Revenge
+[32m[2015-02-11 21:20:55.783] [INFO] [default] - [39m We have already State of Affairs
+[32m[2015-02-11 21:20:55.783] [INFO] [default] - [39mFound fresher index for State of Affairs 112
+[32m[2015-02-11 21:20:55.783] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:20:55.783] [INFO] [default] - [39m We have already Shameless US
+[32m[2015-02-11 21:20:55.784] [INFO] [default] - [39mFound fresher index for Shameless US 504
+[32m[2015-02-11 21:20:55.784] [INFO] [default] - [39m We have already Two and a Half Men
+[32m[2015-02-11 21:20:55.784] [INFO] [default] - [39mFound fresher index for Two and a Half Men 1213
+Getting to page 8
+[32m[2015-02-11 21:20:56.451] [INFO] [default] - [39m We have already The Simpsons
+[32m[2015-02-11 21:20:56.451] [INFO] [default] - [39mFound fresher index for The Simpsons 2613
+[32m[2015-02-11 21:20:56.452] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:20:56.452] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:56.452] [INFO] [default] - [39m We have already Scorpion
+[32m[2015-02-11 21:20:56.453] [INFO] [default] - [39mFound fresher index for Scorpion 114
+[32m[2015-02-11 21:20:56.454] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:56.454] [INFO] [default] - [39m We have already Two and a Half Men
+[32m[2015-02-11 21:20:56.454] [INFO] [default] - [39m We have already The Flash 2014
+[32m[2015-02-11 21:20:56.650] [INFO] [default] - [39mTV Show added Castle 2009
+[32m[2015-02-11 21:20:56.651] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:20:56.651] [INFO] [default] - [39m We have already The Simpsons
+[32m[2015-02-11 21:20:56.848] [INFO] [default] - [39mTV Show added Reign
+[32m[2015-02-11 21:20:57.292] [INFO] [default] - [39mTV Show added Law and Order SVU
+[32m[2015-02-11 21:20:57.293] [INFO] [default] - [39m We have already Sleepy Hollow
+[32m[2015-02-11 21:20:57.293] [INFO] [default] - [39mFound fresher index for Sleepy Hollow 215
+[32m[2015-02-11 21:20:57.293] [INFO] [default] - [39m We have already Modern Family
+[32m[2015-02-11 21:20:57.293] [INFO] [default] - [39mFound fresher index for Modern Family 610
+[32m[2015-02-11 21:20:57.487] [INFO] [default] - [39mTV Show added Hart of Dixie
+[32m[2015-02-11 21:20:57.488] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:20:57.488] [INFO] [default] - [39m We have already How to Get Away with Murder
+[32m[2015-02-11 21:20:57.488] [INFO] [default] - [39mFound fresher index for How to Get Away with Murder 110
+[32m[2015-02-11 21:20:57.492] [INFO] [default] - [39m We have already Family Guy
+[32m[2015-02-11 21:20:57.492] [INFO] [default] - [39mFound fresher index for Family Guy 1310
+[32m[2015-02-11 21:20:57.493] [INFO] [default] - [39m We have already NCIS New Orleans
+[32m[2015-02-11 21:20:57.493] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:20:57.494] [INFO] [default] - [39m We have already Empire 2015
+[32m[2015-02-11 21:20:57.494] [INFO] [default] - [39mFound fresher index for Empire 2015 104
+[32m[2015-02-11 21:20:57.495] [INFO] [default] - [39m We have already New Girl
+Getting to page 7
+[32m[2015-02-11 21:20:57.881] [INFO] [default] - [39m We have already Supernatural
+[32m[2015-02-11 21:20:58.071] [INFO] [default] - [39mTV Show added NCIS Los Angeles
+[32m[2015-02-11 21:20:58.265] [INFO] [default] - [39mTV Show added The 100
+[32m[2015-02-11 21:20:58.461] [INFO] [default] - [39mTV Show added Chicago Fire
+[32m[2015-02-11 21:20:58.461] [INFO] [default] - [39m We have already The Originals
+[32m[2015-02-11 21:20:58.461] [INFO] [default] - [39mFound fresher index for The Originals 211
+[32m[2015-02-11 21:20:58.654] [INFO] [default] - [39mTV Show added Brooklyn Nine-Nine
+[32m[2015-02-11 21:20:58.842] [INFO] [default] - [39mTV Show added MythBusters
+[32m[2015-02-11 21:20:58.843] [INFO] [default] - [39m We have already Brooklyn Nine-Nine
+[32m[2015-02-11 21:20:58.843] [INFO] [default] - [39mFound fresher index for Brooklyn Nine-Nine 215
+[32m[2015-02-11 21:20:58.844] [INFO] [default] - [39m We have already Greys Anatomy
+[32m[2015-02-11 21:20:58.844] [INFO] [default] - [39mFound fresher index for Greys Anatomy 1109
+[32m[2015-02-11 21:20:58.844] [INFO] [default] - [39m We have already Modern Family
+[32m[2015-02-11 21:20:59.343] [INFO] [default] - [39mTV Show added Gold Rush
+[32m[2015-02-11 21:20:59.343] [INFO] [default] - [39m We have already Backstrom
+[32m[2015-02-11 21:20:59.343] [INFO] [default] - [39m We have already Modern Family
+[32m[2015-02-11 21:20:59.343] [INFO] [default] - [39mFound fresher index for Modern Family 613
+[32m[2015-02-11 21:20:59.344] [INFO] [default] - [39m We have already The Vampire Diaries
+[32m[2015-02-11 21:20:59.344] [INFO] [default] - [39mFound fresher index for The Vampire Diaries 613
+[32m[2015-02-11 21:20:59.532] [INFO] [default] - [39mTV Show added Chicago PD
+[32m[2015-02-11 21:20:59.533] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:20:59.534] [INFO] [default] - [39m We have already 2 Broke Girls
+[32m[2015-02-11 21:20:59.534] [INFO] [default] - [39m We have already Game of Thrones
+[32m[2015-02-11 21:20:59.535] [INFO] [default] - [39m We have already Modern Family
+[32m[2015-02-11 21:20:59.914] [INFO] [default] - [39mTV Show added 90210
+[32m[2015-02-11 21:20:59.915] [INFO] [default] - [39m We have already NCIS
+[32m[2015-02-11 21:20:59.915] [INFO] [default] - [39m We have already Family Guy
+[32m[2015-02-11 21:20:59.915] [INFO] [default] - [39m We have already Girls
+Getting to page 6
+[32m[2015-02-11 21:21:00.156] [INFO] [default] - [39m We have already Constantine
+[32m[2015-02-11 21:21:00.156] [INFO] [default] - [39m We have already Banshee
+[32m[2015-02-11 21:21:00.156] [INFO] [default] - [39m We have already Supernatural
+[32m[2015-02-11 21:21:00.156] [INFO] [default] - [39m We have already Constantine
+[32m[2015-02-11 21:21:00.157] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:00.157] [INFO] [default] - [39m We have already Gold Rush
+[32m[2015-02-11 21:21:00.157] [INFO] [default] - [39mFound fresher index for Gold Rush 515
+[32m[2015-02-11 21:21:00.157] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:00.157] [INFO] [default] - [39m We have already Shameless US
+[32m[2015-02-11 21:21:00.157] [INFO] [default] - [39m We have already Homeland
+[32m[2015-02-11 21:21:00.157] [INFO] [default] - [39mFound fresher index for Homeland 412
+[32m[2015-02-11 21:21:00.158] [INFO] [default] - [39m We have already Its Always Sunny in Philadelphia
+[32m[2015-02-11 21:21:00.158] [INFO] [default] - [39mFound fresher index for Its Always Sunny in Philadelphia 1004
+[32m[2015-02-11 21:21:00.158] [INFO] [default] - [39m We have already Grimm
+[32m[2015-02-11 21:21:00.158] [INFO] [default] - [39mFound fresher index for Grimm 411
+[32m[2015-02-11 21:21:00.159] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:00.159] [INFO] [default] - [39m We have already Greys Anatomy
+[32m[2015-02-11 21:21:00.159] [INFO] [default] - [39m We have already Brooklyn Nine-Nine
+[32m[2015-02-11 21:21:00.159] [INFO] [default] - [39m We have already Family Guy
+[32m[2015-02-11 21:21:00.159] [INFO] [default] - [39m We have already Constantine
+[32m[2015-02-11 21:21:00.160] [INFO] [default] - [39m We have already Person of Interest
+[32m[2015-02-11 21:21:00.160] [INFO] [default] - [39mFound fresher index for Person of Interest 413
+[32m[2015-02-11 21:21:00.160] [INFO] [default] - [39m We have already Banshee
+[32m[2015-02-11 21:21:00.298] [INFO] [default] - [39mTV Show added Mob City
+[32m[2015-02-11 21:21:00.298] [INFO] [default] - [39m We have already Empire 2015
+[32m[2015-02-11 21:21:00.298] [INFO] [default] - [39mFound fresher index for Empire 2015 105
+[32m[2015-02-11 21:21:00.299] [INFO] [default] - [39m We have already Brooklyn Nine-Nine
+[32m[2015-02-11 21:21:00.299] [INFO] [default] - [39m We have already Chicago Fire
+[32m[2015-02-11 21:21:00.299] [INFO] [default] - [39mFound fresher index for Chicago Fire 314
+[32m[2015-02-11 21:21:00.299] [INFO] [default] - [39m We have already Awkward
+Getting to page 5
+[32m[2015-02-11 21:21:00.552] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:21:00.552] [INFO] [default] - [39m We have already Elementary
+[32m[2015-02-11 21:21:00.552] [INFO] [default] - [39mFound fresher index for Elementary 313
+[32m[2015-02-11 21:21:01.019] [INFO] [default] - [39mTV Show added Glee
+[32m[2015-02-11 21:21:01.020] [INFO] [default] - [39m We have already The Vampire Diaries
+[32m[2015-02-11 21:21:01.020] [INFO] [default] - [39m We have already Criminal Minds
+[32m[2015-02-11 21:21:01.021] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:01.021] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:21:01.022] [INFO] [default] - [39m We have already Chicago PD
+[32m[2015-02-11 21:21:01.022] [INFO] [default] - [39mFound fresher index for Chicago PD 213
+[32m[2015-02-11 21:21:01.022] [INFO] [default] - [39m We have already Scorpion
+[32m[2015-02-11 21:21:01.022] [INFO] [default] - [39mFound fresher index for Scorpion 115
+[32m[2015-02-11 21:21:01.023] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:21:01.694] [INFO] [default] - [39mTV Show added Under the Dome
+[32m[2015-02-11 21:21:01.694] [INFO] [default] - [39m We have already Mom
+[32m[2015-02-11 21:21:01.880] [INFO] [default] - [39mTV Show added Suits
+[32m[2015-02-11 21:21:01.881] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:01.881] [INFO] [default] - [39m We have already Person of Interest
+[32m[2015-02-11 21:21:01.881] [INFO] [default] - [39mFound fresher index for Person of Interest 414
+[32m[2015-02-11 21:21:01.881] [INFO] [default] - [39m We have already New Girl
+[32m[2015-02-11 21:21:01.881] [INFO] [default] - [39m We have already The 100
+[32m[2015-02-11 21:21:01.882] [INFO] [default] - [39m We have already American Horror Story
+[32m[2015-02-11 21:21:01.882] [INFO] [default] - [39mFound fresher index for American Horror Story 413
+[32m[2015-02-11 21:21:02.536] [INFO] [default] - [39mTV Show added Anger Management
+[32m[2015-02-11 21:21:02.538] [INFO] [default] - [39m We have already Revenge
+[32m[2015-02-11 21:21:02.539] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:21:02.539] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:02.539] [INFO] [default] - [39mFound fresher index for Arrow 312
+[32m[2015-02-11 21:21:02.539] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:21:02.540] [INFO] [default] - [39m We have already The Flash 2014
+Getting to page 4
+[32m[2015-02-11 21:21:02.781] [INFO] [default] - [39m We have already The Mentalist
+[32m[2015-02-11 21:21:02.781] [INFO] [default] - [39m We have already Modern Family
+[32m[2015-02-11 21:21:02.781] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:02.781] [INFO] [default] - [39mFound fresher index for The Big Bang Theory 810
+[32m[2015-02-11 21:21:02.782] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:02.782] [INFO] [default] - [39mFound fresher index for The Big Bang Theory 811
+[32m[2015-02-11 21:21:02.975] [INFO] [default] - [39mTV Show added Stalker
+[32m[2015-02-11 21:21:02.976] [INFO] [default] - [39m We have already The Flash 2014
+[32m[2015-02-11 21:21:02.976] [INFO] [default] - [39m We have already Banshee
+[32m[2015-02-11 21:21:02.976] [INFO] [default] - [39m We have already The 100
+[32m[2015-02-11 21:21:02.976] [INFO] [default] - [39mFound fresher index for The 100 211
+[32m[2015-02-11 21:21:02.977] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:21:02.977] [INFO] [default] - [39m We have already The Flash 2014
+[32m[2015-02-11 21:21:02.977] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:21:02.977] [INFO] [default] - [39mFound fresher index for Pretty Little Liars 518
+[32m[2015-02-11 21:21:02.978] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:02.978] [INFO] [default] - [39m We have already Two and a Half Men
+[32m[2015-02-11 21:21:02.978] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:02.979] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:02.979] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:02.979] [INFO] [default] - [39m We have already Elementary
+[32m[2015-02-11 21:21:02.979] [INFO] [default] - [39m We have already Scandal US
+[32m[2015-02-11 21:21:02.979] [INFO] [default] - [39m We have already 12 Monkeys
+[32m[2015-02-11 21:21:02.980] [INFO] [default] - [39m We have already Grimm
+[32m[2015-02-11 21:21:02.980] [INFO] [default] - [39m We have already 12 Monkeys
+[32m[2015-02-11 21:21:03.166] [INFO] [default] - [39mTV Show added Justified
+[32m[2015-02-11 21:21:03.166] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:03.167] [INFO] [default] - [39mFound fresher index for The Big Bang Theory 812
+[32m[2015-02-11 21:21:03.167] [INFO] [default] - [39m We have already Game of Thrones
+Getting to page 3
+[32m[2015-02-11 21:21:03.403] [INFO] [default] - [39m We have already New Girl
+[32m[2015-02-11 21:21:03.403] [INFO] [default] - [39m We have already Black Sails
+[32m[2015-02-11 21:21:03.403] [INFO] [default] - [39mFound fresher index for Black Sails 203
+[32m[2015-02-11 21:21:03.404] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:21:03.404] [INFO] [default] - [39m We have already Modern Family
+[32m[2015-02-11 21:21:03.405] [INFO] [default] - [39m We have already Scandal US
+[32m[2015-02-11 21:21:03.405] [INFO] [default] - [39mFound fresher index for Scandal US 411
+[32m[2015-02-11 21:21:03.405] [INFO] [default] - [39m We have already Criminal Minds
+[32m[2015-02-11 21:21:03.405] [INFO] [default] - [39mFound fresher index for Criminal Minds 1014
+[32m[2015-02-11 21:21:03.405] [INFO] [default] - [39m We have already The Originals
+[32m[2015-02-11 21:21:03.405] [INFO] [default] - [39mFound fresher index for The Originals 212
+[32m[2015-02-11 21:21:03.406] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:03.406] [INFO] [default] - [39m We have already Castle 2009
+[32m[2015-02-11 21:21:03.406] [INFO] [default] - [39mFound fresher index for Castle 2009 714
+[32m[2015-02-11 21:21:03.406] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:03.406] [INFO] [default] - [39mFound fresher index for The Big Bang Theory 813
+[32m[2015-02-11 21:21:03.407] [INFO] [default] - [39m We have already Hart of Dixie
+[32m[2015-02-11 21:21:03.407] [INFO] [default] - [39m We have already Its Always Sunny in Philadelphia
+[32m[2015-02-11 21:21:03.407] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:21:03.407] [INFO] [default] - [39m We have already 12 Monkeys
+[32m[2015-02-11 21:21:03.407] [INFO] [default] - [39m We have already Banshee
+[32m[2015-02-11 21:21:03.408] [INFO] [default] - [39m We have already Glee
+[32m[2015-02-11 21:21:03.408] [INFO] [default] - [39mFound fresher index for Glee 606
+[32m[2015-02-11 21:21:03.408] [INFO] [default] - [39m We have already Girls
+[32m[2015-02-11 21:21:03.408] [INFO] [default] - [39m We have already Black Sails
+[32m[2015-02-11 21:21:03.408] [INFO] [default] - [39m We have already Reign
+[32m[2015-02-11 21:21:03.408] [INFO] [default] - [39mFound fresher index for Reign 213
+[32m[2015-02-11 21:21:03.409] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:03.409] [INFO] [default] - [39m We have already 12 Monkeys
+[32m[2015-02-11 21:21:03.409] [INFO] [default] - [39mFound fresher index for 12 Monkeys 104
+[32m[2015-02-11 21:21:03.411] [INFO] [default] - [39m We have already Arrow
+Getting to page 2
+[32m[2015-02-11 21:21:03.651] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:03.651] [INFO] [default] - [39m We have already Hart of Dixie
+[32m[2015-02-11 21:21:03.652] [INFO] [default] - [39mFound fresher index for Hart of Dixie 405
+[32m[2015-02-11 21:21:03.652] [INFO] [default] - [39m We have already Sleepy Hollow
+[32m[2015-02-11 21:21:03.653] [INFO] [default] - [39mFound fresher index for Sleepy Hollow 216
+[32m[2015-02-11 21:21:03.653] [INFO] [default] - [39m We have already Black Sails
+[32m[2015-02-11 21:21:03.653] [INFO] [default] - [39m We have already The 100
+[32m[2015-02-11 21:21:03.654] [INFO] [default] - [39m We have already Criminal Minds
+[32m[2015-02-11 21:21:03.654] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:21:03.654] [INFO] [default] - [39m We have already Grimm
+[32m[2015-02-11 21:21:03.654] [INFO] [default] - [39mFound fresher index for Grimm 412
+[32m[2015-02-11 21:21:03.654] [INFO] [default] - [39m We have already Greys Anatomy
+[32m[2015-02-11 21:21:03.655] [INFO] [default] - [39m We have already Suits
+[32m[2015-02-11 21:21:03.655] [INFO] [default] - [39mFound fresher index for Suits 412
+[32m[2015-02-11 21:21:03.655] [INFO] [default] - [39m We have already Suits
+[32m[2015-02-11 21:21:03.655] [INFO] [default] - [39m We have already Greys Anatomy
+[32m[2015-02-11 21:21:03.655] [INFO] [default] - [39mFound fresher index for Greys Anatomy 1110
+[32m[2015-02-11 21:21:03.655] [INFO] [default] - [39m We have already Forever US
+[32m[2015-02-11 21:21:03.655] [INFO] [default] - [39mFound fresher index for Forever US 115
+[32m[2015-02-11 21:21:03.656] [INFO] [default] - [39m We have already The Flash 2014
+[32m[2015-02-11 21:21:03.656] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:21:03.656] [INFO] [default] - [39m We have already How to Get Away with Murder
+[32m[2015-02-11 21:21:03.656] [INFO] [default] - [39mFound fresher index for How to Get Away with Murder 111
+[32m[2015-02-11 21:21:03.656] [INFO] [default] - [39m We have already New Girl
+[32m[2015-02-11 21:21:03.656] [INFO] [default] - [39mFound fresher index for New Girl 415
+[32m[2015-02-11 21:21:03.657] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:03.658] [INFO] [default] - [39m We have already How to Get Away with Murder
+[32m[2015-02-11 21:21:03.658] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:21:03.658] [INFO] [default] - [39m We have already The Vampire Diaries
+[32m[2015-02-11 21:21:03.659] [INFO] [default] - [39m We have already The Vampire Diaries
+[32m[2015-02-11 21:21:03.659] [INFO] [default] - [39m We have already 12 Monkeys
+Getting to page 1
+[32m[2015-02-11 21:21:04.063] [INFO] [default] - [39m We have already Constantine
+[32m[2015-02-11 21:21:04.064] [INFO] [default] - [39m We have already The Flash 2014
+[32m[2015-02-11 21:21:04.064] [INFO] [default] - [39m We have already Suits
+[32m[2015-02-11 21:21:04.064] [INFO] [default] - [39m We have already Gotham
+[32m[2015-02-11 21:21:04.064] [INFO] [default] - [39mFound fresher index for Gotham 115
+[32m[2015-02-11 21:21:04.065] [INFO] [default] - [39m We have already Marvels Agent Carter
+[32m[2015-02-11 21:21:04.065] [INFO] [default] - [39m We have already Supernatural
+[32m[2015-02-11 21:21:04.065] [INFO] [default] - [39mFound fresher index for Supernatural 1013
+[32m[2015-02-11 21:21:04.066] [INFO] [default] - [39m We have already Arrow
+[32m[2015-02-11 21:21:04.067] [INFO] [default] - [39m We have already The Flash 2014
+[32m[2015-02-11 21:21:04.067] [INFO] [default] - [39m We have already The Originals
+[32m[2015-02-11 21:21:04.067] [INFO] [default] - [39mFound fresher index for The Originals 213
+[32m[2015-02-11 21:21:04.068] [INFO] [default] - [39m We have already Shameless US
+[32m[2015-02-11 21:21:04.068] [INFO] [default] - [39m We have already Person of Interest
+[32m[2015-02-11 21:21:04.069] [INFO] [default] - [39m We have already Game of Thrones
+[32m[2015-02-11 21:21:04.069] [INFO] [default] - [39m We have already The Vampire Diaries
+[32m[2015-02-11 21:21:04.070] [INFO] [default] - [39m We have already Elementary
+[32m[2015-02-11 21:21:04.070] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:21:04.070] [INFO] [default] - [39mFound fresher index for Pretty Little Liars 519
+[32m[2015-02-11 21:21:04.071] [INFO] [default] - [39m We have already 12 Monkeys
+[32m[2015-02-11 21:21:04.071] [INFO] [default] - [39m We have already Supernatural
+[32m[2015-02-11 21:21:04.071] [INFO] [default] - [39m We have already The Mentalist
+[32m[2015-02-11 21:21:04.072] [INFO] [default] - [39mFound fresher index for The Mentalist 710
+[32m[2015-02-11 21:21:04.072] [INFO] [default] - [39m We have already Scorpion
+[32m[2015-02-11 21:21:04.072] [INFO] [default] - [39mFound fresher index for Scorpion 116
+[32m[2015-02-11 21:21:04.072] [INFO] [default] - [39m We have already Scandal US
+[32m[2015-02-11 21:21:04.073] [INFO] [default] - [39m We have already Shameless US
+[32m[2015-02-11 21:21:04.073] [INFO] [default] - [39mFound fresher index for Shameless US 505
+[32m[2015-02-11 21:21:04.073] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:04.073] [INFO] [default] - [39mFound fresher index for The Big Bang Theory 814
+[32m[2015-02-11 21:21:04.073] [INFO] [default] - [39m We have already The Big Bang Theory
+[32m[2015-02-11 21:21:04.073] [INFO] [default] - [39m We have already Pretty Little Liars
+[32m[2015-02-11 21:21:04.074] [INFO] [default] - [39m We have already How to Get Away with Murder
+DONE

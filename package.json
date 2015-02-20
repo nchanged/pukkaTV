@@ -1,0 +1,32 @@
+{
+  "name": "pukkaTV",
+  "version": "0.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nchanged/pukkaTV.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nchanged/pukkaTV/issues"
+  },
+  "homepage": "https://github.com/nchanged/pukkaTV",
+  "dependencies": {
+    "aria2": "0.0.6",
+    "async": "^0.9.0",
+    "cheerio": "^0.18.0",
+    "express": "^4.11.2",
+    "lodash": "^3.1.0",
+    "log4js": "^0.6.22",
+    "request": "^2.53.0",
+    "wires-class": "0.0.0",
+    "wires-config": "0.0.5",
+    "wires-domain": "^1.0.3",
+    "wires-mysql": "0.0.3"
+  }
+}
