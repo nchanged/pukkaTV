@@ -2,7 +2,12 @@ var domain = require('wires-domain');
 var Config = require('wires-config');
 var models = require('./models');
 
-Config.register('app.conf', 'main', {
+var configName = "app.conf";
+if(process.argv.length == 3){
+    configName = "prod.conf";
+}
+
+Config.register(configName, 'main', {
     domain: domain,
     models: models
 })
