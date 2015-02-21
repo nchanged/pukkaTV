@@ -3,6 +3,7 @@ module.exports = function(req, res)
 {
 	var genre = req.query.genre;
 	var currentGenre = "All Movies"
+	var ratingOrder = req.query.rating;
 	new models.Genre().find().order({name : 'asc'}).all(function(genres){
 		
 		
@@ -16,8 +17,13 @@ module.exports = function(req, res)
                 }
             });
         }
+        if ( ratingOrder ){
+        	movies.order({rating : 'desc'})
+        } else {
+        	movies.order({age : 'asc'})
+        }
         //movies.limit(50);
-        movies.order({age : 'asc'})
+        
         movies.all(function(movieList){
 
 
