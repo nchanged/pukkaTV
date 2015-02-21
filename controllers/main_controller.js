@@ -4,6 +4,7 @@ module.exports = function(req, res)
 	var genre = req.query.genre;
 	var currentGenre = "All Movies"
 	var ratingOrder = req.query.rating;
+	var yearplus = req.query.year;
 	new models.Genre().find().order({name : 'asc'}).all(function(genres){
 		
 		
@@ -21,6 +22,10 @@ module.exports = function(req, res)
         	movies.order({rating : 'desc'})
         } else {
         	movies.order({age : 'asc'})
+        }
+
+        if ( yearplus ){
+        	movies.find({year : { $gte : yearplus  * 1}})
         }
         //movies.limit(50);
         
