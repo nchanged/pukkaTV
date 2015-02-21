@@ -100,51 +100,51 @@ module.exports = Class.extend({
             });
             // neeed: quality, quality_param, year, title
 
-            $(body).find(".dataList li strong").each(function(index, element){
+            $(body).find(".dataList li strong").each(function(index, element) {
                 var header = $(element);
                 var group = header.text();
                 var parent = header.parent();
-                switch(group){
+                switch (group) {
                     case "Movie:":
-                        res.title = parent.find("span").text() ;
-                    break;
+                        res.title = parent.find("span").text();
+                        break;
                     case "Detected quality:":
-                        res.quality = parent.find("span").text() ;
-                    break;
+                        res.quality = parent.find("span").text();
+                        break;
                     case "Release date:":
                         var y = parent.text().match(/^.*?(\d{4})$/i);
-                        if ( y ){
+                        if (y) {
                             res.year = y[1] * 1;
                         }
-                        
-                        
-                    break;
+
+
+                        break;
                 }
             });
             // give it another try
-            if (!res.year){
+            if (!res.year) {
                 var yy = $(body).find(".novertmarg span");
-                if ( yy ){
+                if (yy) {
                     var yearMath = yy.text().match(/\((\d{4})\)/i);
-                    if ( yearMath ){
+                    if (yearMath) {
                         var year = yearMath[1] * 1;
-                        if ( year > 1900 ){
+                        if (year > 1900) {
                             res.year = year * 1;
                         }
                     } else {
                         // and anothoer
                         var yearMath = yy.text().match(/(\d{4})/i)
-                        if ( yearMath ){
+                        if (yearMath) {
                             var year = yearMath[1] * 1;
-                            if ( year > 1900 ){
+                            if (year > 1900) {
                                 res.year = year * 1;
-                            }   
+                            }
                         }
                     }
                 }
             }
-            
-            
+
+
 
             $(body).find(".dataList a[class=plain]").each(function(index, element) {
                 var el = $(element);
@@ -156,7 +156,7 @@ module.exports = Class.extend({
                     res.imdb_id = el.text() * 1;
                 }
             });
-            
+
             done(res);
         });
     },
@@ -169,7 +169,7 @@ module.exports = Class.extend({
                 if ($(element).attr("id")) {
                     var age = 31536000 * 5;
                     var main = $(element).find(".cellMainLink");
-                    var seeds =  $(element).find('.green').text() * 1;
+                    var seeds = $(element).find('.green').text() * 1;
 
                     var fullTitle = $(main).text();
 
@@ -185,15 +185,15 @@ module.exports = Class.extend({
                     })
 
                     var magnetLink = $(element).find('.imagnet').attr('href');
-                    
+
                     var url = $(main).attr("href");
-                        result.push({
-                            age: age,
-                            url: url,
-                            seeds : seeds,
-                            full_title : fullTitle,
-                            magnet: magnetLink,
-                        });
+                    result.push({
+                        age: age,
+                        url: url,
+                        seeds: seeds,
+                        full_title: fullTitle,
+                        magnet: magnetLink,
+                    });
 
                 }
             });
@@ -203,7 +203,7 @@ module.exports = Class.extend({
     },
     updateGenreCount: function(done) {
         //SELECT count(1) FROM movie WHERE INSTR(genres, 'Animation') > 0
-        logger.info("Updating genres count...."); 
+        logger.info("Updating genres count....");
         new models.Genre().all(function(items) {
             async.eachSeries(items, function(item, ready) {
 
@@ -211,34 +211,37 @@ module.exports = Class.extend({
                     genres: {
                         $contains: item.get('name')
                     }
-                }).count(function(count){
+                }).count(function(count) {
                     item.set('amount', count)
-                    item.save(function(){
-                        ready(null);     
+                    item.save(function() {
+                        ready(null);
                     })
                 });
-                
-            }, function(){
-                var updateAllMovieCount = function(allMovies)
-                {
-                     new models.Movie().count(function(amount){
+
+            }, function() {
+                var updateAllMovieCount = function(allMovies) {
+                    new models.Movie().count(function(amount) {
                         allMovies.set('amount', amount);
-                        allMovies.save(function(){
+                        allMovies.save(function() {
                             done();
                         })
-                     })
+                    })
                 }
-                new models.Genre().find({name : "All Movies"}).first(function(allMovies){
-                    if ( !allMovies){
-                        var n = new models.Genre({name : "All Movies"});
-                        n.save(function(allMovies){
+                new models.Genre().find({
+                    name: "All Movies"
+                }).first(function(allMovies) {
+                    if (!allMovies) {
+                        var n = new models.Genre({
+                            name: "All Movies"
+                        });
+                        n.save(function(allMovies) {
                             updateAllMovieCount(allMovies);
                         })
                     } else {
                         updateAllMovieCount(allMovies);
                     }
                 });
-                
+
             });
         })
     },
@@ -263,20 +266,22 @@ module.exports = Class.extend({
                             self._getMovieDetails(movieItem.url, function(movieDetails) {
                                 // checking genres****
                                 _.each(movieDetails.genres, function(genre) {
-                                    new models.Genre().find({
-                                        name: genre
-                                    }).first(function(genreFound) {
-                                        if (!genreFound) {
-                                            new models.Genre({
-                                                name: genre
-                                            }).save();
-                                        }
-                                    })
+                                    if (genre) {
+                                        new models.Genre().find({
+                                            name: genre
+                                        }).first(function(genreFound) {
+                                            if (!genreFound) {
+                                                new models.Genre({
+                                                    name: genre
+                                                }).save();
+                                            }
+                                        })
+                                    }
                                 });
                                 //********************
-                                if (!movieDetails.imdb_id) {
-                                    logger.warn("SKIPPED: Movie has not imdb id " + movieItem.title);
-                                    movieDone();    
+                                if (!movieDetails.imdb_id || movieDetails.year) {
+                                    logger.warn("SKIPPED: Movie has not imdb id or year " + movieItem.title);
+                                    movieDone();
                                     return;
                                 }
 
@@ -290,8 +295,8 @@ module.exports = Class.extend({
                                         quality: data.quality,
                                         magnet: data.magnet,
                                         movie_id: movieId,
-                                        full_title : data.full_title,
-                                        seeds : data.seeds
+                                        full_title: data.full_title,
+                                        seeds: data.seeds
                                     });
                                     newMagnet.save(function() {
                                         logger.info("New magnet for " + movieItem.title + " was added");
@@ -304,7 +309,7 @@ module.exports = Class.extend({
                                     imdb_id: data.imdb_id
                                 }).first(function(movieFound) {
                                     if (!movieFound) {
-                                        
+
                                         var nmovie = new models.Movie(data);
 
                                         nmovie.save(function(n) {
@@ -319,11 +324,11 @@ module.exports = Class.extend({
                             });
                         } else {
                             logger.info("Update seeds found for " + movieItem.full_title);
-                            magnetFound.set('seeds', movieItem.seeds );
-                            magnetFound.save(function(){
-                                movieDone();    
+                            magnetFound.set('seeds', movieItem.seeds);
+                            magnetFound.save(function() {
+                                movieDone();
                             });
-                            
+
                         }
                     });
 
@@ -336,10 +341,10 @@ module.exports = Class.extend({
 
             });
         }, function() {
-            self.updateGenreCount(function(){
-                logger.info("All done....");    
+            self.updateGenreCount(function() {
+                logger.info("All done....");
             })
-            
+
         });
     },
 

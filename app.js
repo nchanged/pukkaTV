@@ -1,11 +1,13 @@
 var domain = require('wires-domain');
 var Config = require('wires-config');
 var models = require('./models');
+var controller = require('./controllers');
 
 var configName = "app.conf";
 if(process.argv.length == 3){
     configName = "prod.conf";
 }
+var swig = require('swig');
 
 Config.register(configName, 'main', {
     domain: domain,
@@ -26,6 +28,17 @@ var app = domain.webApp();
 
 
 
+app.use(express.static(__dirname + '/public'));
+app.engine('html', swig.renderFile);
+app.set('view engine', 'html');
+app.set('views', __dirname + '/views');
+app.set('view cache', false);
+swig.setDefaults({
+    cache: false
+});
+
+
+app.get("/", controller.MainController);
 
 
 
