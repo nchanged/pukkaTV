@@ -16,9 +16,11 @@ module.exports = function(req, res)
                 }
             });
         }
-        movies.limit(50);
+        //movies.limit(50);
         movies.order({age : 'asc'})
         movies.all(function(movieList){
+
+
         	res.render('index', {genres : genres, movies : movieList, currentGenre : currentGenre});
         });
 		
