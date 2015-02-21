@@ -279,7 +279,8 @@ module.exports = Class.extend({
                                     }
                                 });
                                 //********************
-                                if (!movieDetails.imdb_id || movieDetails.year) {
+                                
+                                if (!movieDetails.imdb_id || !movieDetails.year) {
                                     logger.warn("SKIPPED: Movie has not imdb id or year " + movieItem.title);
                                     movieDone();
                                     return;
