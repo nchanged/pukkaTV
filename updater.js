@@ -30,7 +30,7 @@ domain.connect(cfg, function() {
 
     var kickass = new Service.KickAss();
 
-    kickass.buildMoviesOnPages(100, function() {
+    kickass.buildMoviesOnPages(2, function() {
 
     });
 

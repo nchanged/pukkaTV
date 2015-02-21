@@ -41,21 +41,36 @@ var getAge = function(str) {
 
 var getContents = function(link, done) {
 
-    var headers = {
-        'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0',
-        'Content-Type': 'application/x-www-form-urlencoded',
-        'Accept-Language': 'en-US,en;q=0.8'
-    };
-    request.get({
-        url: link,
-        headers: headers,
-        followAllRedirects: true,
-        gzip: true
+    var doRequest = function() {
+        var headers = {
+            'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.8; rv:24.0) Gecko/20100101 Firefox/24.0',
+            'Content-Type': 'application/x-www-form-urlencoded',
+            'Accept-Language': 'en-US,en;q=0.8'
+        };
+        var link = this.link;
+        var done = this.done;
 
-    }, function(e, r, body) {
-        $ = cheerio.load(body);
-        done($, body)
-    });
+        request.get({
+            url: link,
+            headers: headers,
+            followAllRedirects: true,
+            gzip: true
+
+        }, function(e, r, body) {
+            if ( e ){
+                setTimeout(function(){
+                    doRequest();
+                },5000);
+            } else {
+                $ = cheerio.load(body);
+                done($, body)    
+            }
+            
+        });
+    }.bind({link : link, done : done})
+
+    doRequest();
+
 }
 
 module.exports = Class.extend({
@@ -279,7 +294,7 @@ module.exports = Class.extend({
                                     }
                                 });
                                 //********************
-                                
+
                                 if (!movieDetails.imdb_id || !movieDetails.year) {
                                     logger.warn("SKIPPED: Movie has not imdb id or year " + movieItem.title);
                                     movieDone();
@@ -433,7 +448,11 @@ module.exports = Class.extend({
                         })
                     });
                     async.series(fns, function(err, res) {
-                        pageReady(null);
+                        setInterval(function(){
+                            logger.info("5 seconds rest before going further...");
+                            pageReady(null);
+                        }, 5000);
+                        
                     })
                 });
             }.bind({
