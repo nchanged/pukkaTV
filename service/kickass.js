@@ -7,6 +7,7 @@ var models = require('../models');
 var log4js = require('log4js');
 var logger = log4js.getLogger();
 var async = require('async');
+var daemons = require('../daemons');
 
 
 var getAge = function(str) {
@@ -327,9 +328,12 @@ module.exports = Class.extend({
                                     if (!movieFound) {
 
                                         var nmovie = new models.Movie(data);
-
+                                        logger.info("Adding movie " + data.title);
                                         nmovie.save(function(n) {
-                                            addMagnet(n.get('id'));
+                                            // Updating release data and rating
+                                            daemons.RatingUpdate.checkMovie(n, function(){
+                                                addMagnet(n.get('id'));    
+                                            });
                                         });
                                     } else {
                                         addMagnet(movieFound.get('id'));

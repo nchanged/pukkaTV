@@ -11,7 +11,8 @@ var Movie = domain.models.BaseModel.extend({
         genres : {type : 'json'},
         summary : {type : 'varchar(2000)'},
         imdb_id : {type : 'int'},
-        age : {type : 'int'}
+        age : {type : 'int'},
+        release_date : {type : 'bigint'}
     }
 });
 module.exports = Movie;

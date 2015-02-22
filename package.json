@@ -27,7 +27,7 @@
     "swig": "^1.4.2",
     "wires-class": "0.0.0",
     "wires-config": "0.0.5",
-    "wires-domain": "^1.0.3",
+    "wires-domain": "^1.0.4",
     "wires-mysql": "0.0.3"
   }
 }

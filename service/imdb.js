@@ -96,7 +96,5 @@ var IMDB = {
 
     }
 }
-IMDB.details(3280916, function(){
 
-});
 module.exports = IMDB;
