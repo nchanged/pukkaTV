@@ -261,10 +261,10 @@ module.exports = Class.extend({
             });
         })
     },
-    buildMoviesOnPages: function(pages, done) {
+    buildMoviesOnPages: function(start, end, done) {
 
         var pagesIndex = [];
-        for (var i = 1; i <= pages; i++) {
+        for (var i = start; i <= end; i++) {
             pagesIndex.push(i);
         }
         var self = this;
