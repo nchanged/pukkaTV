@@ -1,0 +1,23 @@
+{% for movie in movies %}
+<div class="col-md-3 col-sm-6 hero-feature">
+    <div class="thumbnail">
+        <img src="{{movie.attrs.img}}" alt="">
+        <div class="caption">
+            <h4>{{movie.attrs.title}} ({{movie.attrs.year}})</h4>
+            <div class="icon-imdb">
+                <a target="_blank" href="http://www.imdb.com/title/tt{{movie.attrs.imdb_id}}/">{{movie.attrs.rating}}</a> 
+
+                <span style="font-size:10px">{{movie.getDate()}}</span>
+            </div>
+
+            {% for genre in movie.attrs.genres %} {% if genre == currentGenre %}
+            <span class="label label-success">{{genre}}</span> {%else%}
+            <span class="label label-default"><a href="/?genre={{genre}}">{{genre}}</a></span> {%endif%} {% endfor %}
+
+
+            <div class="summary">{{movie.attrs.summary}}</div>
+
+        </div>
+    </div>
+</div>
+{% endfor %}

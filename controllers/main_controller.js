@@ -5,10 +5,17 @@ module.exports = function(req, res)
 	var currentGenre = "All Movies"
 	var ratingOrder = req.query.rating;
 	var yearplus = req.query.year;
+    var release = req.query.release;
+
+    var offset = req.query.offset;
+
+
+
 	new models.Genre().find().order({name : 'asc'}).all(function(genres){
 		
 		
 		var movies = new models.Movie();
+        movies.find({release_date : {$notNull : true} } );
 
 		if (genre && genre != "All Movies") {
 			currentGenre = genre;
@@ -20,19 +27,30 @@ module.exports = function(req, res)
         }
         if ( ratingOrder ){
         	movies.order({rating : 'desc'})
-        } else {
-        	movies.order({age : 'asc'})
+        } 
+
+
+        if ( release){
+            movies.order({release_date : 'desc'})   
         }
 
         if ( yearplus ){
         	movies.find({year : { $gte : yearplus  * 1}})
         }
-        //movies.limit(50);
+        
+        movies.limit(50);
+        if ( offset ){
+            movies.offset(offset*1);    
+        }
+        
         
         movies.all(function(movieList){
 
-
-        	res.render('index', {genres : genres, movies : movieList, currentGenre : currentGenre});
+            if ( req.query.template ){
+                res.render('movie_items', {movies : movieList, currentGenre : currentGenre});    
+            } else {
+        	   res.render('index', {genres : genres, movies : movieList, currentGenre : currentGenre});
+            }
         });
 		
 	});

@@ -1,4 +1,5 @@
 var domain = require('wires-domain');
+var moment = require('moment');
 
 var Movie = domain.models.BaseModel.extend({
     name: 'movie',
@@ -13,6 +14,13 @@ var Movie = domain.models.BaseModel.extend({
         imdb_id : {type : 'int'},
         age : {type : 'int'},
         release_date : {type : 'bigint'}
+    },
+    getDate : function()
+    {
+        if ( this.attrs.release_date ){
+            return moment(this.attrs.release_date).format('DD MMMM YYYY')
+        }
+        return "";
     }
 });
 module.exports = Movie;
