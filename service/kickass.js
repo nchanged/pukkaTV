@@ -179,6 +179,7 @@ module.exports = Class.extend({
     // movies ********************************
     _getMoviePage: function(page, done) {
         //https://kickass.to/highres-movies/4/
+        logger.info(" ------> OPENING " + "https://kickass.to/movies/" + page);
         getContents("https://kickass.to/movies/" + page, function($, body) {
             var result = [];
             $(body).find("#mainSearchTable tr").each(function(index, element) {
@@ -316,7 +317,7 @@ module.exports = Class.extend({
                                         seeds: data.seeds
                                     });
                                     newMagnet.save(function() {
-                                        logger.info("New magnet for " + movieItem.title + " was added");
+                                        logger.info(pageNum + " -> New magnet for " + movieItem.title + " was added");
                                         movieDone();
                                     });
                                 }
@@ -328,7 +329,7 @@ module.exports = Class.extend({
                                     if (!movieFound) {
 
                                         var nmovie = new models.Movie(data);
-                                        logger.info("Adding movie " + data.title);
+                                        logger.info(pageNum + " -> Adding movie " + data.title);
                                         nmovie.save(function(n) {
                                             // Updating release data and rating
                                             daemons.RatingUpdate.checkMovie(n, function(){
@@ -343,7 +344,7 @@ module.exports = Class.extend({
 
                             });
                         } else {
-                            logger.info("Update seeds found for " + movieItem.full_title);
+                            logger.info(pageNum + " -> Update seeds found for " + movieItem.full_title);
                             magnetFound.set('seeds', movieItem.seeds);
                             magnetFound.save(function() {
                                 movieDone();
