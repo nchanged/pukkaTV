@@ -536,7 +536,10 @@ module.exports = Class.extend({
                         if (ageData) {
                             age = getAge(inner);
                         }
-                    })
+                    });
+                    if ( !age ){
+                        age = 31536000 * 5;
+                    } 
 
 
 
