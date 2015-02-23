@@ -30,9 +30,9 @@ module.exports = function(req, res)
         } 
 
 
-        if ( release){
+       // if ( release){
             movies.order({release_date : 'desc'})   
-        }
+       // }
 
         if ( yearplus ){
         	movies.find({year : { $gte : yearplus  * 1}})
