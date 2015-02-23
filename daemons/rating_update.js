@@ -1,10 +1,11 @@
 var domain = require('wires-domain');
-var Config = require('wires-config');
+
 var models = require('../models');
 var _ = require('lodash');
 var Service = require('../service');
 var async = require('async');
 var logger = require('log4js').getLogger();
+var Config = require('wires-config');
 var cfg = Config.getMain();
 
 

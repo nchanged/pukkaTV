@@ -1,0 +1,68 @@
+{% extends 'index.html' %} {% block content %}
+<style>
+#details {
+    background-color: white !important;
+    padding-top: 20px;
+    height: auto;
+     margin:10px
+}
+#magnets {
+	font-size: 11px;
+}
+</style>
+<div id="details" style="">
+    <div id="pusher"></div>
+     <div id="pusher"></div>
+
+
+    <div class="col-md-3" style="height:300px;max-width: 250px;">
+        <img src="{{movie.attrs.img}}" alt="">
+
+    </div>
+
+
+
+    <div class="col-md-8">
+        <div class="caption">
+            <h3>{{movie.attrs.title}} ({{movie.attrs.year}})</h3>
+            <div class="icon-imdb">
+                <a target="_blank" href="http://www.imdb.com/title/tt{{movie.attrs.imdb_id}}/">{{movie.attrs.rating}}</a>
+
+                <span style="font-size:10px">{{movie.getDate()}}</span>
+            </div>
+
+            {% for genre in movie.attrs.genres %} {% if genre == currentGenre %}
+            <span class="label label-success">{{genre}}</span> {%else%}
+            <span class="label label-default"><a href="/?genre={{genre}}">{{genre}}</a></span> {%endif%} {% endfor %}
+
+
+            <div class="summary" style="max-height: auto !important">{{movie.attrs.summary}}</div>
+
+        </div>
+    </div>
+
+    <div class="col-md-8">
+    	  <p style="font-size:11px;margin-top:5px; margin-bottom:5px;font-weight: bold">Magnets</p>
+        <table id="magnets" class="table table-hover">
+           
+            <tbody>
+                {% for magnet in magnets %}
+                <tr>
+                    <td>{{magnet.attrs.full_title}}</td>
+                    <td>{{magnet.attrs.quality}}</td>
+                    <td></td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+
+    </div>
+</div>
+
+
+
+
+
+{% endblock %}

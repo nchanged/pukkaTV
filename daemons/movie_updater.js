@@ -37,4 +37,3 @@ var updater = module.exports = {
         });
     }
 }
-updater.updateAll();

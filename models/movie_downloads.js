@@ -6,6 +6,10 @@ var MovieDownloads = domain.models.BaseModel.extend({
         id: {},
         magnet_id: {type : 'int'},
         done : {type : 'int'},
+        total : {type : 'bigint'},
+        completed : {type : 'bigint'},
+        files : {type : 'json-med'},
+        movie_id : {type : 'int'},
         path : {}
     }
 

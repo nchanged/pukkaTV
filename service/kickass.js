@@ -77,7 +77,7 @@ var getContents = function(link, done) {
 module.exports = Class.extend({
 
     initialize: function() {
-        console.log(cfg.get('kickass.feed'));
+      
 
     },
     _getMovieDetails: function(url, done) {

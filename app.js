@@ -2,6 +2,7 @@ var domain = require('wires-domain');
 var Config = require('wires-config');
 var models = require('./models');
 var controller = require('./controllers');
+var daemons = require('./daemons');
 
 var configName = "app.conf";
 if(process.argv.length == 3){
@@ -39,7 +40,7 @@ swig.setDefaults({
 
 
 app.get("/", controller.MainController);
-
+app.get("/movie/:id", controller.MovieController);
 
 
 // MOVIES *************************
@@ -115,15 +116,17 @@ domain.add('/api/shows/:id?', {
 });
 
 
-/*Service.Aria.connect({
-  host: 'localhost',
-  port: 6800,
-  secure: false,
-  secret: ''
-});*/
-
 domain.connect(cfg, function() {
     var port = cfg.get('app.port', 8888);
+    Service.Aria.init();
+    Service.Aria.listen(daemons.DownloadUpdater.onUpdate);
+    Service.Aria.connect({
+      host: 'localhost',
+      port: 6800,
+      secure: false,
+      secret: ''
+    });
+
 
     var kickass = new Service.KickAss();
 

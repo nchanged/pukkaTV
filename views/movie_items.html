@@ -3,7 +3,7 @@
     <div class="thumbnail">
         <img src="{{movie.attrs.img}}" alt="">
         <div class="caption">
-            <h4>{{movie.attrs.title}} ({{movie.attrs.year}})</h4>
+            <h4><a href="/movie/{{movie.attrs.id}}">{{movie.attrs.title}}</a> ({{movie.attrs.year}})</h4>
             <div class="icon-imdb">
                 <a target="_blank" href="http://www.imdb.com/title/tt{{movie.attrs.imdb_id}}/">{{movie.attrs.rating}}</a> 
 

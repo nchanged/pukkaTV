@@ -26,6 +26,7 @@
     "moment": "^2.9.0",
     "request": "^2.53.0",
     "swig": "^1.4.2",
+    "utorrent-api": "^0.1.4",
     "wires-class": "0.0.0",
     "wires-config": "0.0.5",
     "wires-domain": "^1.0.4",

@@ -1,0 +1,13 @@
+{% extends 'index.html' %}
+
+{% block content %}
+<div id="pusher"></div>	
+<div class="row text-center" id="movie-content">
+	{% include "./movie_items.html" %}
+</div>
+
+{% endblock %}
+
+{% block js %}
+ <script type='text/javascript' src="/scripts/movie.js"></script>
+{% endblock %}

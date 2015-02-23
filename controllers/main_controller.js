@@ -49,7 +49,7 @@ module.exports = function(req, res)
             if ( req.query.template ){
                 res.render('movie_items', {movies : movieList, currentGenre : currentGenre});    
             } else {
-        	   res.render('index', {genres : genres, movies : movieList, currentGenre : currentGenre});
+        	   res.render('movie_list', {genres : genres, movies : movieList, currentGenre : currentGenre});
             }
         });
 		
