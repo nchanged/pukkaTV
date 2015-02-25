@@ -48,7 +48,7 @@
             <tbody>
                 {% for magnet in magnets %}
                 <tr>
-                    <td>{{magnet.attrs.full_title}}</td>
+                    <td><a href="#" class="download-magnet" magnet_id="{{magnet.attrs.id}}">{{magnet.attrs.full_title}}</a></td>
                     <td>{{magnet.attrs.quality}}</td>
                     <td></td>
                 </tr>
@@ -66,3 +66,7 @@
 
 
 {% endblock %}
+
+{%block js%}
+ <script type='text/javascript' src="/scripts/download_magnet.js"></script>
+{%endblock%}

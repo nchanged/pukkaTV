@@ -4,8 +4,12 @@ var path = require('path');
 var watchCallbacks = {};
 var pingCallbacks = {};
 
- var Config = require('wires-config');
+var Config = require('wires-config');
+var mySql = require('wires-mysql');
 var cfg = Config.getMain();
+var logger = require('log4js').getLogger();
+var models = require('../models');
+var _ = require('lodash');
 
 var bytesToSize = function(bytes) {
     if (bytes == 0) return '0 Byte';
@@ -20,14 +24,13 @@ var onUpdate = function(list) {
 }
 
 module.exports = {
-    init : function()
-    {
+    init: function() {
         Config = require('wires-config');
         cfg = Config.getMain();
     },
 
     connect: function(options) {
-       
+
 
 
         var self = this;
@@ -41,72 +44,85 @@ module.exports = {
         this.client.onsend = function(m) {
 
         };
-        this.client.onmessage = function(m) {
-            var result = m.result;
-            if (result) {
-                if (result.dir) {
-                    var dir = result.dir;
-                    var idMatch = dir.match(/_id(\d{1})/i);
-                    if (idMatch) {
-                        var id = idMatch[1];
-                        var totalLength = result.totalLength;
-                        var completedLength = result.completedLength;
-                        if (watchCallbacks["id-" + id]) {
-
-                            watchCallbacks["id-" + id]({
-                                id: id,
-                                totalLength: result.totalLength,
-                                completedLength: completedLength,
-                                total: bytesToSize(result.totalLength),
-                                complete: bytesToSize(result.completedLength),
-                                gid: result.gid,
-                                status: result.status
-                            })
-                        }
-                    }
-                }
-            }
-        };
 
         this.client.onDownloadStart = function(data) {
-            pingCallbacks[data.gid] = setInterval(function() {
-                client.tellStatus(data.gid, ["gid", "dir", "status", "downloadSpeed", "totalLength", "completedLength"]);
-            }, 2000)
 
         };
 
 
         this.client.onDownloadComplete = function(e) {
 
-            var gid = e.gid;
-            clearInterval(pingCallbacks[gid]);
         }
 
-        var testMagnet = "magnet:?xt=urn:btih:E63A9B7329462B4961FADA125E140AFDAE3286E1&dn=the+hunger+games+mockingjay+part+1+2014+hdrip+xvid+evo&tr=udp%3A%2F%2Fopen.demonii.com%3A1337%2Fannounce";
+
         var client = this.client;
 
         this.client.open(function() {
             self.connected = true;
             self.getServerStatus();
-           
+
         });
     },
     listen: function(callback) {
         onUpdate = callback;
     },
+    dbChecked: false,
+    initialCheckForDownloadRestarts: function(data) {
+
+        var existingIds = [0];
+        _.each(data, function(item) {
+            var movieDownloadIdMatch = item.dir.match(/movie_id(\d{1,})/i);
+            if (movieDownloadIdMatch) {
+                existingIds.push(movieDownloadIdMatch[1])
+            }
+        });
+        /*
+        */
+        var self = this;
+
+        mySql.connection.get(function(err, connection){
+            var q = "Select * from movie_downloads where id not in ("+existingIds.join(',')+") and total != completed OR total is null OR completed is null";
+            connection.query(q, function(err, results){
+                
+                _.each(results, function(item){
+                    // Need to restart download
+                    var magnetId = item.magnet_id;
+
+                    new models.MovieMagnet().find({id : magnetId}).first(function(magnet){
+                        logger.info("Restart download for " + magnet.get('full_title'))
+                        self.addMagnet({
+                            "type": "movie",
+                            "magnet": magnet.get('magnet'),
+                            "title": magnet.get("full_title"),
+                            "id": item.id
+                        });
+                    });
+                })
+                connection.release();
+            })
+        })
+        
+    },
     getServerStatus: function() {
         var self = this;
         setInterval(function() {
-            self.client.tellActive(["files", "dir", "totalLength", "completedLength"],function(e, data) {
+            self.client.tellActive(["files", "dir", "totalLength", "completedLength"], function(e, data) {
+                
+                if (self.dbChecked === false) {
+                    self.dbChecked = true;
+                    self.initialCheckForDownloadRestarts(data);
+                }
+                
                 onUpdate(data);
             });
         }, 2000)
     },
     addMagnet: function(opts, callback) {
         var self = this;
+        
 
         var dlFolder = cfg.get("downloads.movies", '/Users/iorlov/Desktop/PukkaDownloads/');
-        if ( opts.type === "tv"){
+        if (opts.type === "tv") {
             dlFolder = cfg.get("downloads.tv", '/Users/iorlov/Desktop/PukkaDownloads/');
         }
 
@@ -124,7 +140,8 @@ module.exports = {
             var dir = path.join(dlFolder, title);
             
             self.client.addUri([magnet], {
-                dir: dir
+                dir: dir,
+                "seed-ratio" : 0.1
             });
         }
     }

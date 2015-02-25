@@ -8,8 +8,9 @@ var MovieDownloads = domain.models.BaseModel.extend({
         done : {type : 'int'},
         total : {type : 'bigint'},
         completed : {type : 'bigint'},
-        files : {type : 'json-med'},
+        files : {type : 'json-large', hidden : true},
         movie_id : {type : 'int'},
+        finished : {type : 'bool'},
         path : {}
     }
 

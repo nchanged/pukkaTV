@@ -24,34 +24,41 @@ module.exports = domain.resources.BaseResource.extend({
             magnet_id: magnet_id
         }).first(function(scheduled) {
             if (!scheduled) {
-                new models.MovieMagnet({
-                    id: magnet_id
-                }).first(function(magnet) {
+                new models.MovieMagnet().find({
+                        id: magnet_id
+                    })
+                    .first(function(magnet) {
 
-                    if (!magnet) {
-                        env.res.send({
-                            err: "Magnet was not found"
-                        });
-                    } else {
-
-                        var newDownload = new models.MovieDownloads({
-                            magnet_id: magnet.get('id'),
-                            movie_id: magnet.get('movie_id')
-                        })
-                        newDownload.save(function(nw) {
-
-                            service.Aria.addMagnet({
-                                "type": "movie",
-                                "magnet": magnet.get('magnet'),
-                                "title": magnet.get("full_title"),
-                                "id": nw.get("id")
-                            });
+                        if (!magnet) {
                             env.res.send({
-                                success: nw
+                                err: "Magnet was not found"
                             });
-                        })
-                    }
-                });
+                        } else {
+                           
+
+                            var newDownload = new models.MovieDownloads({
+                                magnet_id: magnet.get('id'),
+                                movie_id: magnet.get('movie_id')
+                            })
+                            newDownload.save(function(nw) {
+                                
+                                new models.Movie().find({
+                                    id: magnet.get('movie_id')
+                                }).first(function(movie) {
+                                    service.Aria.addMagnet({
+                                        "type": "movie",
+                                        "magnet": magnet.get('magnet'),
+                                        "title": magnet.get("full_title"),
+                                        "id": nw.get("id")
+                                    });
+                                    env.res.send({
+                                        success: nw
+                                    });
+                                })
+
+                            })
+                        }
+                    });
             } else {
                 env.res.send({
                     err: "Already scheduled"

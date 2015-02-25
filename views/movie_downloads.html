@@ -6,14 +6,82 @@
     height: auto;
      margin:10px
 }
+#downloads {
+	margin-top: 50px;
+}
 #magnets {
 	font-size: 11px;
 }
+.movie-title {
+	font-size: 17px;
+	
+	padding:2px;
+}
+.addition {
+	color: gray;
+	font-size: 11px;
+}
+.dl-stat {
+    font-size: 11px;
+    margin-bottom: 5px;
+}
 </style>
 <div id="details" style="">
-    
+ 
+<br />
+Time: <span id="current-time"></span>
 
+     <table id="downloads" class="table table-hover">
+           
+            <tbody>
+                {% for download in downloads %}
+                <tr>
+                    <td width="100">
+                    	<img src="{{download.get("movie").attrs.img}}" width="100">
+                    	
+                    </td>
+                    <td>
+                    	<div>
+                    		<span class="movie-title">{{download.get("movie").attrs.title}} ({{download.get("movie").attrs.year}})<span></div>
+
+
+                    	<div class="addition">{{download.get("movie_magnet").attrs.full_title}}</div>
+                    	<hr>
+                        
+                            
+                        {% if download.attrs.finished %}
+                            <div class="btn btn-success">Watch</div>
+                        {%else%}
+                        <div class="dl-stat" id="dlstat-{{download.attrs.id}}">
+                            <span class="completed"></span> / <span class="total-bytes"></span></div>   
+                            <div class="progress">
+                          <div id="movieprogress-{{download.attrs.id}}" class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 0%">
+                            <span class="complete-text"></span>
+                          </div>
+
+                        </div>
+                        {%endif%}
+                    	
+
+
+
+
+                    </td>
+                    <td></td>
+                </tr>
+                {% endfor %}
+
+            </tbody>
+        </table>
+
+	
 </div>
 
 
 {% endblock %}
+
+
+{%block js%}
+ <script type='text/javascript' src="/scripts/download_update.js"></script>
+{%endblock%}
+

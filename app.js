@@ -41,6 +41,9 @@ swig.setDefaults({
 
 app.get("/", controller.MainController);
 app.get("/movie/:id", controller.MovieController);
+app.get("/downloads", controller.MovieDownloads);
+
+
 
 
 // MOVIES *************************
@@ -55,6 +58,14 @@ domain.add('/api/genres/:id?', {
     }
 });
 
+domain.add('/api/dls', {
+    model: models.MovieDownloads,
+    prepare: function(env, model) {
+        model.find({ finished : false })
+        return model;
+    }
+});
+
 domain.add('/api/movie_magnet', {
     model: models.MovieMagnet,
     prepare: function(env, model) {
@@ -64,6 +75,8 @@ domain.add('/api/movie_magnet', {
         return model;
     }
 });
+
+
 
 
 domain.add('/api/movies/:id?', {
