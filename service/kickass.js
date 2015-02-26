@@ -58,17 +58,20 @@ var getContents = function(link, done) {
             gzip: true
 
         }, function(e, r, body) {
-            if ( e ){
-                setTimeout(function(){
+            if (e) {
+                setTimeout(function() {
                     doRequest();
-                },5000);
+                }, 5000);
             } else {
                 $ = cheerio.load(body);
-                done($, body)    
+                done($, body)
             }
-            
+
         });
-    }.bind({link : link, done : done})
+    }.bind({
+        link: link,
+        done: done
+    })
 
     doRequest();
 
@@ -77,7 +80,7 @@ var getContents = function(link, done) {
 module.exports = Class.extend({
 
     initialize: function() {
-      
+
 
     },
     _getMovieDetails: function(url, done) {
@@ -332,8 +335,8 @@ module.exports = Class.extend({
                                         logger.info(pageNum + " -> Adding movie " + data.title);
                                         nmovie.save(function(n) {
                                             // Updating release data and rating
-                                            daemons.RatingUpdate.checkMovie(n, function(){
-                                                addMagnet(n.get('id'));    
+                                            daemons.RatingUpdate.checkMovie(n, function() {
+                                                addMagnet(n.get('id'));
                                             });
                                         });
                                     } else {
@@ -346,9 +349,16 @@ module.exports = Class.extend({
                         } else {
                             logger.info(pageNum + " -> Update seeds found for " + movieItem.full_title);
                             magnetFound.set('seeds', movieItem.seeds);
-                            magnetFound.save(function() {
-                                movieDone();
-                            });
+                            magnetFound.save({
+                                success: function() {
+                                    movieDone();
+                                },
+                                error: function() {
+                                    movieDone();
+                                }
+                            })
+
+
 
                         }
                     });
@@ -453,11 +463,11 @@ module.exports = Class.extend({
                         })
                     });
                     async.series(fns, function(err, res) {
-                        setInterval(function(){
+                        setInterval(function() {
                             logger.info("5 seconds rest before going further...");
                             pageReady(null);
                         }, 5000);
-                        
+
                     })
                 });
             }.bind({
@@ -538,9 +548,9 @@ module.exports = Class.extend({
                             age = getAge(inner);
                         }
                     });
-                    if ( !age ){
+                    if (!age) {
                         age = 31536000 * 5;
-                    } 
+                    }
 
 
 

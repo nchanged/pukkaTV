@@ -31,7 +31,7 @@ var updater = module.exports = {
             var Service = require('../service');
             var kickass = new Service.KickAss();
 
-            kickass.buildMoviesOnPages(80, 399, function() {
+            kickass.buildMoviesOnPages(84, 400, function() {
                 console.log("ALL DONE");
             });
         });
