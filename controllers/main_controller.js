@@ -8,7 +8,7 @@ module.exports = function(req, res)
     var release = req.query.release;
 
     var offset = req.query.offset;
-
+    var search = req.query.search;
 
 
 	new models.Genre().find().order({name : 'asc'}).all(function(genres){
@@ -29,6 +29,10 @@ module.exports = function(req, res)
         	movies.order({rating : 'desc'})
         } 
 
+        if ( search ){
+
+            movies.find({title : {$like : "%" + search.toLowerCase() + "%" } })
+        }
 
        // if ( release){
             movies.order({release_date : 'desc'})   
@@ -49,7 +53,7 @@ module.exports = function(req, res)
             if ( req.query.template ){
                 res.render('movie_items', {movies : movieList, currentGenre : currentGenre});    
             } else {
-        	   res.render('movie_list', {genres : genres, movies : movieList, currentGenre : currentGenre});
+        	   res.render('movie_list', {search : search, genres : genres, movies : movieList, currentGenre : currentGenre});
             }
         });
 		

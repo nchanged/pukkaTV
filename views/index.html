@@ -32,17 +32,15 @@
     /* custom template */
     
     .icon-imdb {
-    	background-image: url("/icons/imdb.jpg");
-    	background-repeat: no-repeat;
-    	background-position: left;
-    	width: 200px;
-    	text-align: left;
-    	padding-left: 35px;
-    	margin-bottom: 10px;
-
+        background-image: url("/icons/imdb.jpg");
+        background-repeat: no-repeat;
+        background-position: left;
+        width: 200px;
+        text-align: left;
+        padding-left: 35px;
+        margin-bottom: 10px;
     }
-
-    html,	
+    html,
     body {
         height: 100%;
         font-family: verdana, arial, sans-serif;
@@ -61,7 +59,6 @@
     hr {
         border-color: #dedede;
     }
-
     .wrapper,
     .row {
         height: 100%;
@@ -76,8 +73,8 @@
         display: table;
     }
     .thumbnail>img {
-    	height: 300px !important;
-    	width: auto !important;
+        height: 300px !important;
+        width: auto !important;
     }
     .wrapper:after,
     .column:after {
@@ -145,11 +142,10 @@
         padding-left: 0;
         padding-right: 0;
         overflow: scroll;
-        
         -webkit-overflow-scrolling: touch;
     }
     #pusher {
-    	margin-top: 52px !important;
+        margin-top: 52px !important;
     }
     #main .img-circle {
         margin-top: 18px;
@@ -259,14 +255,11 @@
         width: 100%;
     }
     .hero-feature {
-    	height: 520px !important;
-    	text-align: left;
-    	
-    	
-
+        height: 520px !important;
+        text-align: left;
     }
     .thumbnail {
-    	height: 500px !important;
+        height: 500px !important;
     }
     .modal-header,
     .modal-footer {
@@ -310,16 +303,16 @@
  * off canvas sidebar
  * --------------------------------------------------
  */
- 	.summary {
- 		font-size: 10px;
- 		max-height: 60px;
- 		overflow: hidden;
- 		margin-top: 10px;
- 	}
     
+    .summary {
+        font-size: 10px;
+        max-height: 60px;
+        overflow: hidden;
+        margin-top: 10px;
+    }
     #sidebar {
-    	overflow: scroll;
-                -webkit-overflow-scrolling: touch;
+        overflow: scroll;
+        -webkit-overflow-scrolling: touch;
     }
     @media screen and (max-width: 768px) {
         .row-offcanvas {
@@ -343,35 +336,29 @@
         #sidebar-footer a {
             padding-left: 3px;
         }
-
     }
-
     #fucking-header {
-    	
-
-    	background: #555555;
-    	
-
-    	-webkit-box-shadow: -1px 3px 24px -5px rgba(0,0,0,0.75);
-		-moz-box-shadow: -1px 3px 24px -5px rgba(0,0,0,0.75);
-		box-shadow: -1px 3px 24px -5px rgba(0,0,0,0.75);
-		color: white;
+        background: #555555;
+        -webkit-box-shadow: -1px 3px 24px -5px rgba(0, 0, 0, 0.75);
+        -moz-box-shadow: -1px 3px 24px -5px rgba(0, 0, 0, 0.75);
+        box-shadow: -1px 3px 24px -5px rgba(0, 0, 0, 0.75);
+        color: white;
     }
     .section {
-    	margin-top: 7px;
-    	margin-left: 23px;
+        margin-top: 7px;
+        margin-left: 23px;
     }
     .current-genre {
-    	background-color: green;
+        background-color: green;
     }
     #menu-items a {
-        color:white;
+        color: white;
     }
     #menu-items .active a {
-        color:black;
+        color: black;
     }
     .navbar-brand {
-        color:white !important;
+        color: white !important;
     }
     </style>
 </head>
@@ -380,7 +367,7 @@
 
 <body>
 
- 
+
     <nav class="navbar navbar-default navbar-fixed-top navbar-shrink" id="fucking-header">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
@@ -392,11 +379,26 @@
                     <span class="icon-bar"></span>
                 </button>
                 <a class="navbar-brand" href="#page-top">Pukka.TV</a>
+
+
+
             </div>
+
 
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right" id="menu-items">
+
+
+                    <li>
+                        <form class="form-inline" style="margin-right:10px;margin-top:5px;">
+                            <div class="form-group" style="height: 30px">
+
+                                <input type="text" name="search" value="{{search}}" class="form-control" id="exampleInputEmail3" placeholder="Movie ... ">
+                            </div>
+                            <button type="submit" class="btn btn-default">Search</button>
+                        </form>
+                    </li>
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
@@ -412,7 +414,9 @@
                     <li class="page-scroll">
                         <a href="#contact">Contact</a>
                     </li>
+
                 </ul>
+
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -428,7 +432,8 @@
 
                 <!-- sidebar -->
                 <div class="column col-sm-2 col-xs-1 sidebar-offcanvas" id="sidebar">
-                	<br><br>
+                    <br>
+                    <br>
                     <ul class="nav">
                         <li><a href="#" data-toggle="offcanvas" class="visible-xs text-center"><i class="glyphicon glyphicon-chevron-right"></i></a>
                         </li>
@@ -440,12 +445,12 @@
 
                         {% for genre in genres%}
                         <li {% if genre.attrs.name==currentGenre%}class="current-genre" {%endif%}>
-                        	<a href="/?genre={{genre.attrs.name}}"><i class="glyphicon glyphicon-facetime-video"></i>
+                            <a href="/?genre={{genre.attrs.name}}"><i class="glyphicon glyphicon-facetime-video"></i>
 
-                    	<span style="padding-left:5px">
-                    		{{genre.attrs.name}} ({{genre.attrs.amount}})
-                    	</span>
-                    	</a>
+                        <span style="padding-left:5px">
+                            {{genre.attrs.name}} ({{genre.attrs.amount}})
+                        </span>
+                        </a>
                         </li>
                         {% endfor %}
 
@@ -455,14 +460,14 @@
 
 
                 </div>
-                <!-- /sidebar -->	
+                <!-- /sidebar -->
 
 
                 <!-- main right col -->
                 <div class="column col-sm-10 col-xs-11" id="main">
-                     {% block content %}{% endblock %}
-                     
-                	
+                    {% block content %}{% endblock %}
+
+
                 </div>
 
 
@@ -484,7 +489,7 @@
 
 
 
-  {% block js %}{% endblock %}
+    {% block js %}{% endblock %}
 
 
 
