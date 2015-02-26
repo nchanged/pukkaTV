@@ -348,12 +348,13 @@ module.exports = Class.extend({
                             });
                         } else {
                             logger.info(pageNum + " -> Update seeds found for " + movieItem.full_title);
-                            magnetFound.set('seeds', movieItem.seeds);
+                            
+                            //
+                          
+                            magnetFound.set('seeds',movieItem.seeds );
+
                             magnetFound.save({
                                 success: function() {
-                                    movieDone();
-                                },
-                                error: function() {
                                     movieDone();
                                 }
                             })

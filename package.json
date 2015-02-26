@@ -30,6 +30,6 @@
     "wires-class": "0.0.0",
     "wires-config": "0.0.5",
     "wires-domain": "^1.0.6",
-    "wires-mysql": "0.0.5"
+    "wires-mysql": "0.0.7"
   }
 }
