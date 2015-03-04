@@ -27,6 +27,7 @@ module.exports = function(req, res) {
                         if ( isGood && !shitQuality){
                             priorityMagnets.push(magnet)
                         } else {
+                            magnet.isShit = true;
                             restMagnets.push(magnet);
                         }
                         

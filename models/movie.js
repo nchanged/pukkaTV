@@ -13,7 +13,8 @@ var Movie = domain.models.BaseModel.extend({
         summary : {type : 'varchar(2000)'},
         imdb_id : {type : 'int'},
         age : {type : 'int'},
-        release_date : {type : 'bigint'}
+        release_date : {type : 'bigint'},
+        added : {type : 'bigint'}
     },
     getDate : function()
     {

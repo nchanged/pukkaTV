@@ -6,6 +6,7 @@ module.exports = function(req, res)
 	var ratingOrder = req.query.rating;
 	var yearplus = req.query.year;
     var release = req.query.release;
+    var added = req.query.added;
 
     var offset = req.query.offset;
     var search = req.query.search;
@@ -33,9 +34,12 @@ module.exports = function(req, res)
 
             movies.find({title : {$like : "%" + search.toLowerCase() + "%" } })
         }
+        if (added){
+            movies.order({added : 'desc'} )   
+        }
 
        // if ( release){
-            movies.order({release_date : 'desc'})   
+            //movies.order({release_date : 'desc'})   
        // }
 
         if ( yearplus ){

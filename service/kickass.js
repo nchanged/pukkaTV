@@ -330,7 +330,7 @@ module.exports = Class.extend({
                                     imdb_id: data.imdb_id
                                 }).first(function(movieFound) {
                                     if (!movieFound) {
-
+                                        data.added = new Date().getTime();
                                         var nmovie = new models.Movie(data);
                                         logger.info(pageNum + " -> Adding movie " + data.title);
                                         nmovie.save(function(n) {

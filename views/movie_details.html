@@ -9,6 +9,13 @@
 #magnets {
 	font-size: 11px;
 }
+.shit-magnet {
+    color: #ABABAB;
+
+}
+.shit-magnet a {
+    color: #ABABAB;    
+}
 </style>
 <div id="details" style="">
     <div id="pusher"></div>
@@ -47,7 +54,11 @@
            
             <tbody>
                 {% for magnet in magnets %}
+                {% if magnet.isShit %}
+                <tr class="shit-magnet">
+                {%else%}
                 <tr>
+                {%endif%}
                     <td><a href="#" class="download-magnet" magnet_id="{{magnet.attrs.id}}">{{magnet.attrs.full_title}}</a></td>
                     <td>{{magnet.attrs.quality}}</td>
                     <td></td>

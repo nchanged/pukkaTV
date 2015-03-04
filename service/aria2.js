@@ -59,6 +59,7 @@ module.exports = {
 
         this.client.open(function() {
             self.connected = true;
+
             self.getServerStatus();
 
         });
@@ -77,18 +78,20 @@ module.exports = {
             }
         });
         /*
-        */
+         */
         var self = this;
 
-        mySql.connection.get(function(err, connection){
-            var q = "Select * from movie_downloads where id not in ("+existingIds.join(',')+") and total != completed OR total is null OR completed is null";
-            connection.query(q, function(err, results){
-                
-                _.each(results, function(item){
+        mySql.connection.get(function(err, connection) {
+            var q = "Select * from movie_downloads where id not in (" + existingIds.join(',') + ") and total != completed OR total is null OR completed is null";
+            connection.query(q, function(err, results) {
+
+                _.each(results, function(item) {
                     // Need to restart download
                     var magnetId = item.magnet_id;
 
-                    new models.MovieMagnet().find({id : magnetId}).first(function(magnet){
+                    new models.MovieMagnet().find({
+                        id: magnetId
+                    }).first(function(magnet) {
                         logger.info("Restart download for " + magnet.get('full_title'))
                         self.addMagnet({
                             "type": "movie",
@@ -101,25 +104,30 @@ module.exports = {
                 connection.release();
             })
         })
-        
+
     },
     getServerStatus: function() {
         var self = this;
-        setInterval(function() {
-            self.client.tellActive(["files", "dir", "totalLength", "completedLength"], function(e, data) {
-                
-                if (self.dbChecked === false) {
-                    self.dbChecked = true;
-                    self.initialCheckForDownloadRestarts(data);
-                }
-                
-                onUpdate(data);
-            });
-        }, 2000)
+        if (self.connected) {
+            setInterval(function() {
+                self.client.tellActive(["files", "dir", "totalLength", "completedLength"], function(e, data) {
+                    if ( e){
+                        return;
+                    }
+
+                    if (self.dbChecked === false) {
+                        self.dbChecked = true;
+                        self.initialCheckForDownloadRestarts(data);
+                    }
+
+                    onUpdate(data);
+                });
+            }, 2000)
+        }
     },
     addMagnet: function(opts, callback) {
         var self = this;
-        
+
 
         var dlFolder = cfg.get("downloads.movies", '/Users/iorlov/Desktop/PukkaDownloads/');
         if (opts.type === "tv") {
@@ -138,10 +146,10 @@ module.exports = {
             var title = convertToSlug(opts.title) + "_" + opts.type + "_id" + id;
 
             var dir = path.join(dlFolder, title);
-            
+
             self.client.addUri([magnet], {
                 dir: dir,
-                "seed-ratio" : 0.1
+                "seed-ratio": 0.1
             });
         }
     }
